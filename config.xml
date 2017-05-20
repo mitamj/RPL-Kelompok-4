@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="org.coenraets.dreamhouse" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.aulianza.hargapasar" version="1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Harga Pasar</name>
   <description>Harga Pasar app</description>
-  <author email="rplkkelompok4@gmail.com" href="http://aulianza.com">RPL Kelompok 4</author>
+  <author email="rplkkelompok4@gmail.com" href="https://www.google.com">RPL Kelompok 4</author>
   <content src="index.html"/>
   <access origin="*"/>
   <allow-navigation href="http://ionic.local/*"/>
