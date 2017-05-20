@@ -1,6 +1,6 @@
 # Harga Pasar - Kelompok 4 RPL 2017
 
-Harga Pasar adalah sebuah aplikasi yang dibuat dengan menggunakan Ionic 2. 
+Harga Pasar adalah sebuah aplikasi yang berguna untuk mengetahui harga barang di pasar terupdate untuk wilayah Banda Aceh dan Aceh Besar. Aplikasi ini dikembangkan dengan menggunakan Ionic 2. 
 
 ## Tutorial Instalasi
 
