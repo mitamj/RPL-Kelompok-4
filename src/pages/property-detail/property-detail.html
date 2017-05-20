@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Informasi Pasar</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-card *ngIf="property.id">
+        <img src="{{property.picture}}"/>
+        <ion-card-content>
+            <h2 class="card-title"><b>{{property.title}}</b></h2>
+            <p>{{property.address}}, {{property.city}} {{property.state}}</p>
+        </ion-card-content>
+        <ion-list>
+            <ion-item>
+                <ion-icon item-left name="time"></ion-icon>
+                <h3>Jam Buka</h3>
+                <ion-note item-right>07.00-18.00</ion-note>
+            </ion-item>
+            <ion-item>
+                <ion-icon item-left name="people"></ion-icon>
+                <h3>Jumlah Pedagang</h3>
+                <ion-note item-right>{{property.pedagang}}</ion-note>
+            </ion-item>
+        </ion-list>
+
+        <ion-item>
+            <button ion-button icon-left (click)="favorite(property)" clear item-left>
+                <ion-icon name="navigate"></ion-icon>
+                Petunjuk Arah
+            </button>
+            <button ion-button icon-left (click)="share(property)" clear item-right>
+                <ion-icon name="share"></ion-icon>
+                Bagikan
+            </button>
+        </ion-item>
+
+    </ion-card>
+</ion-content>
