@@ -14,7 +14,7 @@ Ikuti instruksi instalasi dibawah ini:
 
 1. Clone repositori ini:
     ```
-    git clone https://github.com/mitamj/RPL_JTEK_2017_04-Mifthahul-Jannah.git
+    git clone https://github.com/mitamj/RPL_JTEK_2017_04.git
     ```
    
 
