@@ -12,13 +12,13 @@ Ikuti instruksi instalasi dibawah ini:
     npm install -g ionic
     ```
 
-1. Clone repositori ini:
+1. Clone repositori ini (Pada branch ini, Download ZIP-nya saja):
     ```
     git clone https://github.com/mitamj/RPL_JTEK_2017_04.git
     ```
    
 
-1. Masuk ke direktori `Harga-Pasar` :
+1. Masuk ke direktori `RPL_JTEK_2017_04` :
     ```
     cd RPL_JTEK_2017_04
     ```
@@ -30,7 +30,7 @@ Ikuti instruksi instalasi dibawah ini:
   
 1. Jalankan aplikasi di browser
     ```
-    ionic serve -l
+    ionic serve
     ```
 
 
