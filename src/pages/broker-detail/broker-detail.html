@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Kategori</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="broker">
+
+    <ion-card>
+
+        <ion-card-content>
+            <img src="{{broker.picture}}"/>
+            <h2>{{broker.jenis}}</h2>
+            <h3>Total : {{broker.jumlah}}</h3>
+        </ion-card-content>
+
+        <ion-list>
+            <a href="#" ion-item>
+                <h3>{{broker.nama}}</h3>
+                <p>per-ikat</p>
+                <ion-note item-right><h2>{{broker.harga}}</h2></ion-note>
+                <ion-icon name="arrow-round-forward" item-right></ion-icon>
+            </a>
+        </ion-list>
+
+        <ion-item>
+            <button ion-button icon-left (click)="favorite(property)" clear item-left>
+                <ion-icon name="pricetags"></ion-icon>
+                Daftar Harga
+            </button>
+            <button ion-button icon-left (click)="share(property)" clear item-right>
+                <ion-icon name="share"></ion-icon>
+                Bagikan
+            </button>
+        </ion-item>
+
+    </ion-card>
+
+</ion-content>
