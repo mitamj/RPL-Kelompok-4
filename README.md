@@ -16,6 +16,8 @@ Ikuti instruksi instalasi dibawah ini:
     ```
     git clone https://github.com/mitamj/RPL_JTEK_2017_04.git
     ```
+    git clone https://github.com/mitamj/RPL_JTEK_2017_04-Mifthahul-Jannah.git
+    ```
 
 1. Masuk ke direktori `Harga-Pasar` :
     ```
