@@ -37,9 +37,10 @@ Link : https://apps.aulianza.com/hargapasar/admin/
 - username : admin
 - password : 123
 
-### Frontend : Android (APK)
+### Frontend : Web / Android (APK)
 
-[Download APK](bit.ly/harga-pasar)
+- Web Demo : https://apps.aulianza.com/hargapasar/
+- APK Demo : [Download APK](https://bit.ly/harga-pasar)
 
 
 ## Credit Library
