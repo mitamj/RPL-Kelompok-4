@@ -1,7 +1,7 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+<p align="center"><img src="https://apps.aulianza.com/hargapasar/icon/icon.png" width="50%"></p>
 
 <p align="center">
-<a>Harga Pasar App</a>
+<a>Harga Pasar App</a><br>
 <a>versi 1.0 beta</a>
 </p>
 
