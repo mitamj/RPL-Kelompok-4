@@ -1,4 +1,4 @@
-<p align="center"><img src="https://apps.aulianza.com/hargapasar/icon/icon.png" width="50%"></p>
+<p align="center"><img src="https://apps.aulianza.com/hargapasar/icon/icon.png" width="20%"></p>
 
 <p align="center">
 <a>Harga Pasar App</a><br>
