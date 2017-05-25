@@ -1,7 +1,7 @@
 <p align="center"><img src="https://apps.aulianza.com/hargapasar/icon/icon.png" width="10%"></p>
 
 <p align="center">
-<a>Harga Pasar App</a><br>
+<a><b>Harga Pasar App</b></a><br>
 <a>versi 1.0 beta</a>
 </p>
 
@@ -27,6 +27,11 @@ Berikut beberapa fitur frontend aplikasi :
 - Lihat data pasar
 - Lihat harga produk
 - Lihat kategori produk 
+- Halaman daftar pasar
+- Halaman daftar produk
+- Halaman kategori produk
+- Halaman tentang aplikasi
+- Halaman kontak kami
 
 ## Demo 
 
