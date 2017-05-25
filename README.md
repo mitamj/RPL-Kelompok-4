@@ -1,35 +1,48 @@
-# Harga Pasar - Kelompok 4 RPL 2017
+<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
-Harga Pasar adalah sebuah aplikasi yang berguna untuk mengetahui harga barang di pasar terupdate untuk wilayah Banda Aceh dan Aceh Besar. Aplikasi ini dikembangkan dengan menggunakan Ionic 2. 
+<p align="center">
+<a>Harga Pasar App</a>
+<a>versi 1.0 beta</a>
+</p>
 
-## Tutorial Instalasi
+## Deskripsi
 
-Ikuti instruksi instalasi dibawah ini:
+Harga Pasar merupakan sebuah aplikasi web dan android yang berfungsi untuk melihat informasi pasar serta harga produk di pasar secara realtime dan terupdate. Aplikasi ini dibangun dengan menggunakan HTML5/CSS3, PHP & MySQL.
 
-1. **Pastikan sudah terinstall Cordova dan Ionic versi terbaru:**
-    ```
-    npm install -g cordova
-    npm install -g ionic
-    ```
+## Fitur 
 
-1. Clone repositori ini:
-    ```
-    git clone https://github.com/mitamj/RPL_JTEK_2017_04.git
-    ```
+# Backend : Web Admin Panel
+Berikut beberapa fitur admin panel :
 
-1. Masuk ke direktori `Harga-Pasar` :
-    ```
-    cd Harga-Pasar
-    ```
+- Dashboard aplikasi
+- Tambah, ubah dan hapus data pasar
+- Tambah, ubah dan hapus harga produk
+- Tambah, ubah dan hapus kategori produk
+- Tambah dan ubah pengaturan aplikasi 
 
-1. Install dependencies
-    ```
-    npm install
-    ```
-  
-1. Jalankan aplikasi di browser
-    ```
-    ionic serve -l
-    ```
+# Frontend : Android
+Berikut beberapa fitur frontend aplikasi :
+
+- Homepage aplikasi
+- Lihat data pasar
+- Lihat harga produk
+- Lihat kategori produk 
+
+## Demo 
+
+# Backend : Web Admin Panel
+
+Link : https://apps.aulianza.com/hargapasar/admin/
+
+- username : admin
+- password : 123
+
+# Frontend : Android (APK)
+
+[Download APK](bit.ly/harga-pasar)
 
 
+## Credit Library
+
+- AdminLTE : https://adminlte.io/
+- Mobile Templates : http://mickaelguillaume.esy.es/Mobile-Template
