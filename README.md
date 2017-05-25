@@ -11,7 +11,7 @@ Harga Pasar merupakan sebuah aplikasi web dan android yang berfungsi untuk melih
 
 ## Fitur 
 
-# Backend : Web Admin Panel
+### Backend : Web Admin Panel
 Berikut beberapa fitur admin panel :
 
 - Dashboard aplikasi
@@ -20,7 +20,7 @@ Berikut beberapa fitur admin panel :
 - Tambah, ubah dan hapus kategori produk
 - Tambah dan ubah pengaturan aplikasi 
 
-# Frontend : Android
+### Frontend : Android
 Berikut beberapa fitur frontend aplikasi :
 
 - Homepage aplikasi
@@ -30,14 +30,14 @@ Berikut beberapa fitur frontend aplikasi :
 
 ## Demo 
 
-# Backend : Web Admin Panel
+### Backend : Web Admin Panel
 
 Link : https://apps.aulianza.com/hargapasar/admin/
 
 - username : admin
 - password : 123
 
-# Frontend : Android (APK)
+### Frontend : Android (APK)
 
 [Download APK](bit.ly/harga-pasar)
 
