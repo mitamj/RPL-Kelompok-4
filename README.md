@@ -7,7 +7,7 @@
 
 ## Deskripsi
 
-Harga Pasar merupakan sebuah aplikasi web dan android yang berfungsi untuk melihat informasi pasar serta harga produk di pasar secara realtime dan terupdate. Aplikasi ini dibangun dengan menggunakan HTML5/CSS3, PHP & MySQL.
+Harga Pasar merupakan sebuah aplikasi web dan android yang berfungsi untuk melihat informasi pasar serta harga produk di pasar secara realtime dan terupdate. Aplikasi ini dibangun dengan menggunakan HTML5/CSS3, PHP 5.6 & MySQL.
 
 ## Fitur 
 
