@@ -20,7 +20,7 @@ Berikut beberapa fitur admin panel :
 - Tambah, ubah dan hapus kategori produk
 - Tambah dan ubah pengaturan aplikasi 
 
-### Frontend : Android
+### Frontend : Android & Web
 Berikut beberapa fitur frontend aplikasi :
 
 - Homepage aplikasi
@@ -35,17 +35,17 @@ Berikut beberapa fitur frontend aplikasi :
 
 ## Demo 
 
-### Backend : Web Admin Panel
+### Backend demo : Web Admin Panel
 
 Link : https://apps.aulianza.com/hargapasar/admin/
 
 - username : admin
 - password : 123
 
-### Frontend : Web / Android (APK)
+### Frontend demo : Android (APK) & Web
 
-- Web Demo : https://apps.aulianza.com/hargapasar/
 - APK Demo : [Download APK](https://bit.ly/harga-pasar)
+- Web Demo : https://apps.aulianza.com/hargapasar/
 
 
 ## Credit Library
