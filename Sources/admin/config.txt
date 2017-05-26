@@ -1,0 +1,17 @@
+Nama Database	: db_rental
+lokasi dbase	: dist/db_rental.sql
+
+Langkah pemasangan aplikasi:
+1. Copy folder rental-hardware ke direktori c:\xampp\htdocs\
+2. Import database mysql, buka http://localhost/phpmyadmin. Buat nama databse, kemudian import file db_rental.sql
+3. Jalankan aplikasi http://localhost/rental-hardware
+
+Account Pengguna
+
+Admin
+username	:admin
+password	:123
+
+User
+username	:user
+password	:123
