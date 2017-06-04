@@ -31,7 +31,7 @@
           <ul>
             <li><a href="index.html"><i class="fa fa-home"></i>Beranda</a></li>
             <li><a href="pasar.php"><i class="fa fa-hospital-o"></i>Info Pasar</a></li>
-            <li><a href="harga.php"><i class="fa fa-money"></i>Harga Terbaru</a></li>
+            <li><a href="produk.php"><i class="fa fa-shopping-cart"></i>Daftar Produk</a></li>
             <li><a href="kategori.php"><i class="fa fa-file-text-o"></i>Kategori Produk</a></li>
             <li><a href="rate.php"><i class="fa fa-star"></i>Rate Aplikasi</a></li>
             <li><a href="tentang.php"><i class="fa fa-info-circle"></i>Tentang Aplikasi</a></li>
@@ -66,8 +66,54 @@
                     <!-- Scrollable page content-->
                     <div class="page-content">
                         <div class="cycle-slideshow">
-                            <img src="img/slider/slider1.jpg" alt="Selamat datang di aplikasi Harga Pasar"><br>
+                            <img src="img/slider/slider1.jpg" alt="Selamat datang di aplikasi Harga Pasar">
                         </div>
+                        <br>
+                            <center>
+                                <marquee scrollamount="3" bgcolor="#fb4848" width="90%">
+                                      <font color="white">
+                                        Selamat datang di Aplikasi Harga Pasar |  
+                                         <span id="clock"></span>
+                                      </font>
+                                </marquee>
+                            </center>
+                            
+                            <script type='text/javascript'>
+                                <!--
+                                var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+                                var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+                                var date = new Date();
+                                var day = date.getDate();
+                                var month = date.getMonth();
+                                var thisDay = date.getDay(),
+                                    thisDay = myDays[thisDay];
+                                var yy = date.getYear();
+                                var year = (yy < 1000) ? yy + 1900 : yy;
+                        
+                            function showTime() {
+                                var a_p = "";
+                                var today = new Date();
+                                var curr_hour = today.getHours();
+                                var curr_minute = today.getMinutes();
+                                var curr_second = today.getSeconds();
+                              
+                                curr_hour = checkTime(curr_hour);
+                                curr_minute = checkTime(curr_minute);
+                                curr_second = checkTime(curr_second);
+                             document.getElementById('clock').innerHTML=thisDay + ', ' + day + ' ' + months[month] + ' ' + year + ' - ' + curr_hour + ":" + curr_minute + ":" + curr_second + " " + 'WIB';
+                                }
+                            
+                            function checkTime(i) {
+                                if (i < 10) {
+                                    i = "0" + i;
+                                }
+                                return i;
+                            }
+                            setInterval(showTime, 500);
+                            //-->
+                            </script>
+                        <br>
+                            
                         <div class="content-block">
                             <div class="row home">
                                 <div class="col-33">
@@ -78,14 +124,14 @@
                                 </div>
 
                                 <div class="col-33">
-                                    <a href="harga.php" class="link">
-                                        <img class="icon" alt="icon" src="icon/harga.png" />
-                                        <span>Harga</span>
+                                    <a href="produk.php" class="link">
+                                        <img class="icon" alt="icon" src="icon/produk.png" />
+                                        <span>Produk</span>
                                     </a>
                                 </div>
                                 <div class="col-33">
                                     <a href="kategori.php" class="link">
-                                        <img class="icon" alt="icon" src="icon/blog.png" />
+                                        <img class="icon" alt="icon" src="icon/kategori.png" />
                                         <span>Kategori</span>
                                     </a>
                                 </div>
@@ -93,7 +139,7 @@
                             <div class="row home">
                                 <div class="col-33">
                                     <a href="rate.php" class="link">
-                                        <img class="icon" alt="icon" src="icon/feature.png" />
+                                        <img class="icon" alt="icon" src="icon/rate.png" />
                                         <span>Rate</span>
                                     </a>
                                 </div>
@@ -105,7 +151,7 @@
                                 </div>
                                 <div class="col-33">
                                     <a href="kontak.php" class="link">
-                                        <img class="icon" alt="icon" src="icon/contact.png" />
+                                        <img class="icon" alt="icon" src="icon/kontak.png" />
                                         <span>Kontak</span>
                                     </a>
                                 </div>
@@ -142,7 +188,6 @@
     <script type="text/javascript" src="js/framework7.min.js"></script>
     <!-- Path to your app js-->
     <script type="text/javascript" src="js/my-app.js"></script>
-    
     <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
 </body>
 

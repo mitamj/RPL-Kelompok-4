@@ -14,7 +14,7 @@
         <div class="col-md-12">
 			<div class="box box-primary">				
 				<div class="box-body">							
-					<a href="home-admin.php?page=form-master-data-pasar" type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add Pasar</a><br /><br />					
+					<a href="home-admin.php?page=form-master-data-pasar" type="button" class="btn btn-primary"><i class="fa fa-plus"></i>&nbsp; Tambah Pasar</a><br /><br />					
 					<table id="example1" class="table table-bordered table-striped">
 						<thead>
 							<tr>
@@ -22,10 +22,9 @@
 								<th>No. Reg #</th>
 								<th>Nama</th>
 								<th>Status</th>
-								<th>Kelas</th>
 								<th>Lokasi</th>
 								<th>Luas</th>
-								<th>More</th>
+								<th>Aksi</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -37,12 +36,11 @@
 							<tr>
 								<td><?=$no?></td>
 								<td><?php echo $pas['no_reg'];?></td>
-								<td><a href="home-admin.php?page=view-detail-data-pasar&id_pasar=<?=$pas['id_pasar'];?>" title="detail"><?php echo $pas['nama'];?></a></td>
+								<td><?php echo $pas['nama'];?></td>
 								<td>Pasar <?php echo $pas['status'];?></td>
-								<td><?php echo $pas['kelas'];?></td>
 								<td><?php echo $pas['lokasi'];?></td>
 								<td><?=number_format($pas['luas'],0,",",".");?> M<sup>2</sup></td>
-								<td class="tools" align="center"><a href="home-admin.php?page=view-detail-data-pasar&id_pasar=<?=$pas['id_pasar'];?>" title="detail"><i class="fa fa-folder-open"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="home-admin.php?page=form-edit-data-pasar&id_pasar=<?=$pas['id_pasar'];?>" title="edit"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="home-admin.php?page=delete-data-pasar&id_pasar=<?php echo $pas['id_pasar'];?>" title="delete"><i class="fa fa-trash-o"></i></a></td>
+								<td class="tools" align="center"><a href="home-admin.php?page=form-edit-data-pasar&id_pasar=<?=$pas['id_pasar'];?>" title="edit"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="home-admin.php?page=delete-data-pasar&id_pasar=<?php echo $pas['id_pasar'];?>" title="delete"><i class="fa fa-trash-o"></i></a></td>
 							</tr>
 						<?php
 							}

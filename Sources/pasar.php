@@ -14,10 +14,16 @@
                         </a>
                     </div>
                     <div class="center">
-                        <h2 class="title">Pasar</h2>
+                        <h2 class="title">PASAR</h2>
+                    </div>
+                    <div class="right">
+                        <a href="index.html" class="link icon-only">
+                            <i class="fa fa-home"></i>
+                        </a>
                     </div>
                 </div>
             </div>
+            
             <div class="pages navbar-through">
                 <div data-page="blog" class="page">
                     <div class="page-content">
@@ -38,7 +44,8 @@
                                 </div>
                             </div>
                             <div class="card-footer">
-                                <a href="https://www.google.co.id/maps/search/<?=$pas['nama'];?>" class="link"><i class="fa fa-location-arrow" aria-hidden="true"></i>Petunjuk Arah</a>
+                                <a href="https://www.google.co.id/maps/search/<?=$pas['nama'];?>" class="link external"><i class="fa fa-location-arrow" aria-hidden="true"></i> Lihat di Peta</a>
+                                <a href="#" class="link"><i class="fa fa-share-alt" aria-hidden="true"></i> Bagikan</a>
                             </div>
                         </div>
 

@@ -10,7 +10,7 @@
        
 			<div class="box box-primary">
 				<div class="box-body box-profile">					
-					<p>Under Construction</p>
+					<p>Under Construction.</p>
 				</div>
 			</div>
        

@@ -43,17 +43,27 @@
 						<div class="form-group">
 							<label class="col-sm-3 control-label">Tanggal Harga</label>
 							<div class="col-sm-4">
-								<div class="input-group date form_date col-sm-12" data-date="" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2" data-link-format="dd-mm-yyyy">
-								<input type="text" name="tgl_reg" value="<?=$hasil['tgl_harga'];?>" class="form-control"><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+								<div class="input-group date form_date col-sm-12" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+								<input type="text" name="tgl_harga" value="<?=$hasil['tgl_harga'];?>" class="form-control"><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
 							</div>
 							</div>
 						</div>
-						<div class="form-group">
+							<div class="form-group">
 							<label class="col-sm-3 control-label">Kategori</label>
 							<div class="col-sm-4">
-								<input type="text" name="kategori" class="form-control" value="<?=$hasil['kategori'];?>" maxlength="100">
+								<select name="kategori" class="form-control select2">
+									 <?php
+											mysql_connect("localhost", "root", "");
+											mysql_select_db("db_hargapasar");
+											$sql = mysql_query("SELECT * FROM tb_kategori");
+											if(mysql_num_rows($sql) != 0){
+												while($data = mysql_fetch_assoc($sql)){
+													echo '<option>'.$data['nama'].'</option>';
+												}
+											}
+										?>
+								</select>
 							</div>
-							
 						</div>
 						
 						<div class="form-group">

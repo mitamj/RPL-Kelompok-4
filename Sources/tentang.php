@@ -9,7 +9,12 @@
                         </a>
                     </div>
                     <div class="center">
-                        <h2 class="title">Tentang Aplikasi</h2>
+                        <h2 class="title">TENTANG APLIKASI</h2>
+                    </div>
+                    <div class="right">
+                        <a href="index.html" class="link icon-only">
+                            <i class="fa fa-home"></i>
+                        </a>
                     </div>
                 </div>
             </div>

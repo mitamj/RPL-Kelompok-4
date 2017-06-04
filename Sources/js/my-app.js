@@ -20,6 +20,18 @@ $$('a').on('click', function (e) { //Close panel when you open a new page
 myApp.onPageInit('pasar', function (page) {
 });
 
+myApp.onPageInit('produk', function (page) {
+});
+
+myApp.onPageInit('kategori', function (page) {
+});
+
+myApp.onPageInit('kontak', function (page) {
+});
+
+myApp.onPageInit('tentang', function (page) {
+});
+
 myApp.onPageInit('about', function (page) {
 });
 
@@ -71,7 +83,7 @@ $$('.notification-full').on('click', function () {
 });
 $$('.notification-custom').on('click', function () {
     myApp.addNotification({
-        title: 'Copernic',
+        title: 'Aulianza',
         subtitle: 'New message from Aulianza',
         message: 'Hello, how are you? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut posuere erat. Pellentesque id elementum urna, a aliquam ante. Donec vitae volutpat orci. Aliquam sed molestie risus, quis tincidunt dui.',
         media: '<img width="44" height="44" style="border-radius:100%" src="http://img4.wikia.nocookie.net/__cb20130920142351/simpsons/images/e/e9/Pic_1187696292_8.jpg">'
@@ -125,7 +137,7 @@ myApp.onPageInit('calendar', function (page) {
                   '</div>' +
               '</div>',
           onOpen: function (p) {
-              $$('.calendar-custom-toolbar .center').text(monthNames[p.currentMonth] +', ' + p.currentYear);
+              $$('.calendar-custom-toolbar .centere').text(monthNames[p.currentMonth] +', ' + p.currentYear);
               $$('.calendar-custom-toolbar .left .link').on('click', function () {
                   calendarInline.prevMonth();
               });

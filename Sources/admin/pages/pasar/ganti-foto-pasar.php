@@ -53,46 +53,6 @@
 				echo "<div class='register-logo'><b>Oops!</b> 404 Error Server.</div>";
 			}
 		}
-		else if ($id_foto	=="foto2"){		
-		$update= mysql_query ("UPDATE tb_pasar SET foto2='$foto' WHERE id_pasar='$id_pasar'");
-			if($update){
-				echo "<div class='register-logo'><b>Edit</b> Successful!</div>	
-					<div class='box box-primary'>
-						<div class='register-box-body'>
-							<p>Edit Foto Samping Pasar ".$id_pasar." Berhasil</p>
-							<div class='row'>
-								<div class='col-xs-8'></div>
-								<div class='col-xs-4'>
-									<button type='button' onclick=location.href='home-admin.php?page=view-detail-data-pasar&id_pasar=$id_pasar' class='btn btn-danger btn-block'>Next >></button>
-								</div>
-							</div>
-						</div>
-					</div>";
-			}
-			else {
-				echo "<div class='register-logo'><b>Oops!</b> 404 Error Server.</div>";
-			}
-		}
-		else {		
-		$update= mysql_query ("UPDATE tb_pasar SET foto3='$foto' WHERE id_pasar='$id_pasar'");
-			if($update){
-				echo "<div class='register-logo'><b>Edit</b> Successful!</div>	
-					<div class='box box-primary'>
-						<div class='register-box-body'>
-							<p>Edit Foto Belakang Pasar ".$id_pasar." Berhasil</p>
-							<div class='row'>
-								<div class='col-xs-8'></div>
-								<div class='col-xs-4'>
-									<button type='button' onclick=location.href='home-admin.php?page=view-detail-data-pasar&id_pasar=$id_pasar' class='btn btn-danger btn-block'>Next >></button>
-								</div>
-							</div>
-						</div>
-					</div>";
-			}
-			else {
-				echo "<div class='register-logo'><b>Oops!</b> 404 Error Server.</div>";
-			}
-		}
 		if (strlen($foto)>0) {
 			if (is_uploaded_file($_FILES['foto']['tmp_name'])) {
 				move_uploaded_file ($_FILES['foto']['tmp_name'], "pages/asset/foto/".$foto);

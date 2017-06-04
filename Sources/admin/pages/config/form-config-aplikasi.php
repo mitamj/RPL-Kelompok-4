@@ -1,5 +1,5 @@
 <section class="content-header">
-    <h1>Konfigurasi<small>Aplikasi</small></h1>
+    <h1>Pengaturan<small>Aplikasi</small></h1>
     <ol class="breadcrumb">
         <li><a href="home-admin.php"><i class="fa fa-dashboard"></i>Dashboard</a></li>
         <li class="active">Aplikasi</li>
@@ -56,8 +56,8 @@
 							</div>
 							<div class="form-group">
 								<div class="col-sm-offset-3 col-sm-7">
-									<button type="submit" name="save" value="save" class="btn btn-danger">Save</button>
-									<a href="home-admin.php" type="button" class="btn btn-default">Cancel</a>
+									<button type="submit" name="save" value="save" class="btn btn-danger">Simpan</button>
+									<a href="home-admin.php" type="button" class="btn btn-default">Batal</a>
 								</div>
 							</div>
 						</form>

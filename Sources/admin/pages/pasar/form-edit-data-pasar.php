@@ -46,20 +46,6 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<label class="col-sm-3 control-label">Klasifikasi Kelas Pasar</label>
-							<div class="col-sm-4">
-								<?php
-								$dataKls = mysql_query("SELECT * FROM tb_kelaspasar ORDER BY kelaspasar");        
-								echo '<select name="kelas" class="form-control select2" style="width: 100%;">';    
-								echo '<option value="'.$hasil['kelas'].'">'.$hasil['kelas'].'</option>';    
-								while ($rowk = mysql_fetch_array($dataKls)) {    
-									echo '<option value="'.$rowk['kelaspasar'].'">'. $rowk['kelaspasar'].'</option>';    
-								}    
-								echo '</select>';
-								?>
-							</div>
-						</div>
-						<div class="form-group">
 							<label class="col-sm-3 control-label">Lokasi</label>
 							<div class="col-sm-7">
 								<textarea type="text" name="lokasi" class="form-control" maxlength="256"><?=$hasil['lokasi'];?></textarea>

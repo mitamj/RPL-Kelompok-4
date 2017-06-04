@@ -6530,6 +6530,7 @@
                         else app.openPanel('left');
                     }
                 }
+                
                 // Close Panel
                 if (clicked.hasClass('close-panel')) {
                     app.closePanel();

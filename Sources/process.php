@@ -1,7 +1,7 @@
 <?php
 // Configure your Subject Prefix and Recipient here
 $subjectPrefix = '[Kontak Harga Pasar]';
-$emailTo       = 'ryanaulia@hotmail.com';
+$emailTo       = 'aulianza01@gmail.com';
 
 $errors = array(); // array to hold validation errors
 $data   = array(); // array to pass back data
@@ -51,7 +51,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         mail($emailTo, $subject, $body, $headers);
 
         $data['success'] = true;
-        $data['message'] = 'Selamat. pesan Anda telah dikirim';
+        $data['message'] = 'Selamat, pesan Anda telah dikirim';
     }
 
     // return all our data to an AJAX call

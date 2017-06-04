@@ -81,18 +81,17 @@ if($_SESSION['hak_akses']!="Admin"){
 									else
 										echo "<img src='dist/img/profile/$set[logo]' class='img-circle' alt='User Image'>";
 								?>
-								<p>Welcome - <?php echo $_SESSION['nama_user'] ?><small><?php echo $_SESSION['hak_akses'] ?></small></p>
+								<p><?php echo $_SESSION['nama_user'] ?><small><?php echo $_SESSION['hak_akses'] ?></small></p>
 							</li>
-							<li class="user-body">
+							<!--<li class="user-body">
 								<div class="row">
 								</div>
-							</li>
+							</li>-->
 							<li class="user-footer">
 								<div class="pull-left">
-									<?php echo date("d-m-Y");?>
 								</div>
 								<div class="pull-right">
-								  <a href="pages/login/act-logout.php" class="btn btn-default btn-flat">Log out</a>
+								  <a href="pages/login/act-logout.php" class="btn btn-default btn-flat">Keluar</a>
 								</div>
 							</li>
 						</ul>
@@ -106,10 +105,10 @@ if($_SESSION['hak_akses']!="Admin"){
 			<ul class="sidebar-menu">
 				<li class="header">MAIN NAVIGATION</li>
 				<li class="treeview"><a href="home-admin.php"><i class="fa fa-dashboard"></i> <span>Dashboard</span></i></a></li>
-				<li class="treeview"><a href="home-admin.php?page=form-view-data-pasar"><i class="fa fa-hospital-o"></i> <span>Data Pasar</span></i></a></li>
-				<li class="treeview"><a href="home-admin.php?page=form-view-data-pedagang"><i class="fa fa-user"></i> <span>Data Pedagang</span></i></a></li>
-				<li class="treeview"><a href="home-admin.php?page=form-view-data-produk"><i class="fa fa-shopping-cart"></i> <span>Data Produk</span></i></a></li>
-				<li class="treeview"><a href="home-admin.php?page=form-view-data-kategori"><i class="fa fa-bars"></i> <span>Data Kategori</span></i></a></li>
+				<!--<li class="treeview"><a href="home-admin.php?page=form-view-data-pasar"><i class="fa fa-hospital-o"></i> <span>Data Pasar</span></i></a></li>-->
+				<!--<li class="treeview"><a href="home-admin.php?page=form-view-data-pedagang"><i class="fa fa-user"></i> <span>Data Pedagang</span></i></a></li>-->
+				<!--<li class="treeview"><a href="home-admin.php?page=form-view-data-produk"><i class="fa fa-shopping-cart"></i> <span>Data Produk</span></i></a></li>
+				<!--<li class="treeview"><a href="home-admin.php?page=form-view-data-kategori"><i class="fa fa-bars"></i> <span>Data Kategori</span></i></a></li>-->
 				<li class="treeview"><a href="home-admin.php?page=form-config-aplikasi"><i class="fa fa-gear"></i> <span>Pengaturan Aplikasi</span></i></a></li>
 				<!--<li class="treeview"><a href="home-admin.php?page=chart-rekapitulasi"><i class="fa fa-bar-chart-o"></i> <span>Chart Rekapitulasi</span></i></a></li>
 				<li class="treeview"><a href="#"><i class="fa fa-print"></i> <span>Report</span><i class="fa fa-angle-left pull-right"></i></a>
@@ -118,6 +117,15 @@ if($_SESSION['hak_akses']!="Admin"){
 						<li><a href="home-admin.php?page=daftar-pedagang">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-caret-right"></i> Daftar Pedagang</a></li>
 					</ul>
 				</li>-->
+				<li class="header">DATA PASAR</li>
+				<li class="treeview"><a href="home-admin.php?page=form-view-data-pasar"><i class="fa fa-hospital-o"></i> <span>Lihat Data Pasar</span></i></a></li>
+				<li class="treeview"><a href="home-admin.php?page=form-master-data-pasar"><i class="fa fa-plus"></i> <span>Tambah Data Pasar</span></i></a></li>
+				<li class="header">DATA PRODUK</li>
+				<li class="treeview"><a href="home-admin.php?page=form-view-data-produk"><i class="fa fa-shopping-cart"></i> <span>Lihat Data Produk</span></i></a></li>
+				<li class="treeview"><a href="home-admin.php?page=form-master-data-produk"><i class="fa fa-plus"></i> <span>Tambah Data Produk</span></i></a></li>
+				<li class="header">DATA KATEGORI</li>
+				<li class="treeview"><a href="home-admin.php?page=form-view-data-kategori"><i class="fa fa-bars"></i> <span>Lihat Data Kategori</span></i></a></li>
+				<li class="treeview"><a href="home-admin.php?page=form-master-data-kategori"><i class="fa fa-plus"></i> <span>Tambah Data Kategori</span></i></a></li>
 			</ul>
 		</section>
 	</aside>
@@ -153,6 +161,15 @@ if($_SESSION['hak_akses']!="Admin"){
 					case 'view-detail-data-produk': include "pages/produk/view-detail-data-produk.php"; break;
 					case 'ganti-foto-produk': include "pages/produk/ganti-foto-produk.php"; break;
 					
+					case 'form-view-data-kategori': include "pages/kategori/form-view-data-kategori.php"; break;
+					case 'form-master-data-kategori': include "pages/kategori/form-master-data-kategori.php"; break;
+					case 'master-data-kategori': include "pages/kategori/master-data-kategori.php"; break;
+					case 'form-edit-data-kategori': include "pages/kategori/form-edit-data-kategori.php"; break;
+					case 'edit-data-kategori': include "pages/kategori/edit-data-kategori.php"; break;
+					case 'delete-data-kategori': include "pages/kategori/delete-data-kategori.php"; break;
+					case 'view-detail-data-kategori': include "pages/kategori/view-detail-data-kategori.php"; break;
+					case 'ganti-foto-kategori': include "pages/kategori/ganti-foto-kategori.php"; break;
+					
 					case 'master-data-kelaspasar': include "pages/master/master-data-kelaspasar.php"; break;
 					case 'form-edit-data-kelaspasar': include "pages/master/form-edit-data-kelaspasar.php"; break;
 					case 'edit-data-kelaspasar': include "pages/master/edit-data-kelaspasar.php"; break;
@@ -171,7 +188,7 @@ if($_SESSION['hak_akses']!="Admin"){
 		</section>
 	</div>
 	<footer class="main-footer">
-		<div class="pull-right hidden-xs"><b>Version</b> 1.0</div>
+		<div class="pull-right hidden-xs">Made with ❤ in Banda Aceh<b> — </b> v 1.0</div>
 		Copyright &copy; 2017 <a href="<?php echo $set['url_app']?>" target="_blank"><?php echo $set['anchor_app']?></a>. All rights reserved
 	</footer>
 </div>
