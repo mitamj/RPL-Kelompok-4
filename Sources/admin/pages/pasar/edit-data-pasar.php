@@ -22,7 +22,7 @@
 	$no_reg			=$_POST['no_reg'];
 	$nama			=$_POST['nama'];
 	$status			=$_POST['status'];
-	$kelas			=$_POST['kelas'];
+	//$kelas			=$_POST['kelas'];
 	$lokasi			=$_POST['lokasi'];
 	$tgl_berdiri	=$_POST['tgl_berdiri'];	
 	$luas			=$_POST['luas'];
@@ -43,7 +43,7 @@
 			</div>";
 		}
 		else{
-		$update= mysql_query ("UPDATE tb_pasar SET no_reg='$no_reg', nama='$nama', status='$status', kelas='$kelas', lokasi='$lokasi', tgl_berdiri='$tgl_berdiri', luas='$luas' WHERE id_pasar='$id_pasar'");
+		$update= mysql_query ("UPDATE tb_pasar SET no_reg='$no_reg', nama='$nama', status='$status', lokasi='$lokasi', tgl_berdiri='$tgl_berdiri', luas='$luas' WHERE id_pasar='$id_pasar'");
 		if($update){
 			echo "<div class='register-logo'><b>Edit</b> Successful!</div>	
 				<div class='box box-primary'>

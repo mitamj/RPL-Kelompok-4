@@ -14,7 +14,7 @@
         <div class="col-md-12">
 			<div class="box box-primary">				
 				<div class="box-body">							
-					<a href="home-admin.php?page=form-master-data-produk" type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add Produk</a><br /><br />					
+					<a href="home-admin.php?page=form-master-data-produk" type="button" class="btn btn-primary"><i class="fa fa-plus"></i>&nbsp; Tambah Produk</a><br /><br />					
 					<table id="example1" class="table table-bordered table-striped">
 						<thead>
 							<tr>
@@ -23,7 +23,7 @@
 								<th>Harga</th>
 								<th>Tanggal Harga</th>
 								<th>Kategori</th>
-								<th>More</th>
+								<th>Aksi</th>
 								
 							</tr>
 						</thead>
@@ -35,13 +35,11 @@
 						?>	
 							<tr>
 								<td><?=$no?></td>
-<!--								<td><?php echo $ped['reg_ped'];?></td> -->
-
-								<td><?php echo $ped['harga'];?></td>
 								<td><?php echo $ped['nama'];?></td>
+								<td><?php echo $ped['harga'];?></td>
 								<td><?php echo $ped['tgl_harga'];?></td>
 								<td><?php echo $ped['kategori'];?></td>
-								<td class="tools" align="center"><a href="home-admin.php?page=view-detail-data-produk&id_produk=<?=$ped['id_produk'];?>" title="detail"><i class="fa fa-folder-open"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="home-admin.php?page=form-edit-data-produk&id_produk=<?=$ped['id_produk'];?>" title="edit"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="home-admin.php?page=delete-data-produk&id_produk=<?php echo $ped['id_produk'];?>" title="delete"><i class="fa fa-trash-o"></i></a></td>
+								<td class="tools" align="center"><a href="home-admin.php?page=form-edit-data-produk&id_produk=<?=$ped['id_produk'];?>" title="edit"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="home-admin.php?page=delete-data-produk&id_produk=<?php echo $ped['id_produk'];?>" title="delete"><i class="fa fa-trash-o"></i></a></td>
 							</tr>
 						<?php
 							}

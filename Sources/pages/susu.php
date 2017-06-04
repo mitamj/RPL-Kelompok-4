@@ -1,6 +1,6 @@
 <?php
     include "database/koneksi.php";
-    $tampilPas=mysql_query("SELECT * FROM tb_produk ORDER BY id_produk ASC");
+    $tampilPas=mysql_query("SELECT * FROM tb_produk WHERE kategori = 'susu'");
 ?>
 
 <body>
@@ -14,7 +14,7 @@
                         </a>
                     </div>
                     <div class="center">
-                        <h2 class="title">DAFTAR HARGA</h2>
+                        <h2 class="title">DAFTAR HARGA SUSU</h2>
                     </div>
                 </div>
             </div>
@@ -29,16 +29,17 @@
                         ?>  
 
                         <div class="card demo-card-header-pic">
-                            <div style="background:linear-gradient(to bottom,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.4)),url(admin/pages/asset/foto/<?php echo $pas['foto1'];?>);background-size: cover;" valign="bottom" class="card-header color-white no-border" valign="bottom" class="card-header color-white no-border"><?php echo $pas['nama'];?></div>
-                            <div class="card-content">
+                           <div class="card-content">
                                 <div class="card-content-inner">
+								
                                     <p class="color-gray">Kategori <?php echo $pas['kategori'];?></p>
-                                    <p><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>Harga : <?php echo($pas['harga']);?></p>
+                                    <p><i class="fa fa-archive" aria-hidden="true"></i>Nama : <?php echo($pas['nama']);?></p>
+									<p><i class="fa fa-tags" aria-hidden="true"></i>Harga : <?php echo($pas['harga']);?></p>
+									<p><i class="fa fa-calendar" aria-hidden="true"></i>Tanggal Harga : <?php echo($pas['tgl_harga']);?></p>
+
                                 </div>
                             </div>
-                            <div class="card-footer">
-                                <a href="pasar.php<?=$pas['nama'];?>><i class="fa fa-location-arrow" aria-hidden="true"></i>Lihat Pasar</a>
-                            </div>
+                           
                         </div>
 
                         <?php

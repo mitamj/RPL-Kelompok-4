@@ -10,7 +10,7 @@
        
 			<div class="box box-primary">
 				<div class="box-body box-profile">					
-					<p>Maaf. Transaksi ini hanya terdapat di versi PRO. Silahkan hubungi Admin</p>
+					<p>Under Construction.</p>
 				</div>
 			</div>
        

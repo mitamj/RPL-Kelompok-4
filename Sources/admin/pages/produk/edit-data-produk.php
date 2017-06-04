@@ -19,9 +19,9 @@
 //		$notreg	=$hasil['reg_ped'];
 				
 	if ($_POST['edit'] == "edit") {
-		$id_produk		=$_POST['id_produk'];
-		$nama		=$_POST['nama'];
-		$harga		=$_POST['harga'];
+		
+		$nama			=$_POST['nama'];
+		$harga			=$_POST['harga'];
 		$tgl_harga		=$_POST['tgl_harga'];
 		$kategori		=$_POST['kategori'];
 		
@@ -41,8 +41,9 @@
 //			</div>";
 //		}
 //		else{
-		if{
-		$update= mysql_query ("UPDATE tb_produk SET id_pasar='$id_pasar', kioslos='$kioslos', luas_kl='$luas_kl', reg_ped='$reg_ped', tgl_reg='$tgl_reg', status='$status', dagangan='$dagangan', nama='$nama', tempat_lhr='$tempat_lhr', tgl_lhr='$tgl_lhr', alamat='$alamat', telp='$telp', ket='$ket' WHERE id_produk='$id_produk'");
+	
+		
+		$update= mysql_query ("UPDATE tb_produk SET nama='$nama', harga='$harga', tgl_harga='$tgl_harga', kategori='$kategori' WHERE id_produk='$id_produk'");
 		if($update){
 			echo "<div class='register-logo'><b>Edit</b> Successful!</div>	
 				<div class='box box-primary'>
@@ -61,6 +62,6 @@
 			echo "<div class='register-logo'><b>Oops!</b> 404 Error Server.</div>";
 		}
 		}
-	}
+	
 ?>
 </div>

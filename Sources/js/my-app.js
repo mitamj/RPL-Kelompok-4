@@ -17,6 +17,21 @@ $$('a').on('click', function (e) { //Close panel when you open a new page
 });
 
 // Callbacks to run specific code for specific pages, for example for About page:
+myApp.onPageInit('pasar', function (page) {
+});
+
+myApp.onPageInit('produk', function (page) {
+});
+
+myApp.onPageInit('kategori', function (page) {
+});
+
+myApp.onPageInit('kontak', function (page) {
+});
+
+myApp.onPageInit('tentang', function (page) {
+});
+
 myApp.onPageInit('about', function (page) {
 });
 
@@ -36,10 +51,10 @@ myApp.onPageInit('form', function (page) {
 });
 
 myApp.onPageInit('google-map', function (page) {
-  var myLatlng = new google.maps.LatLng(48.852873, 2.343627);
+  var myLatlng = new google.maps.LatLng(5.566910, 95.367968);
   var map;
   var mapOptions = {
-    zoom: 12,
+    zoom: 14,
     center: myLatlng
   };
   map = new google.maps.Map(document.getElementById('map-canvas'),
@@ -60,7 +75,7 @@ myApp.onPageInit('notifications', function (page) {
 });
 $$('.notification-full').on('click', function () {
     myApp.addNotification({
-        title: 'Copernic',
+        title: 'Aulianza',
         subtitle: 'Notification subtitle',
         message: 'This is a simple notification message with custom icon and subtitle',
         media: '<i class="fa fa-heart"></i>'
@@ -68,8 +83,8 @@ $$('.notification-full').on('click', function () {
 });
 $$('.notification-custom').on('click', function () {
     myApp.addNotification({
-        title: 'Copernic',
-        subtitle: 'New message from John Doe',
+        title: 'Aulianza',
+        subtitle: 'New message from Aulianza',
         message: 'Hello, how are you? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut posuere erat. Pellentesque id elementum urna, a aliquam ante. Donec vitae volutpat orci. Aliquam sed molestie risus, quis tincidunt dui.',
         media: '<img width="44" height="44" style="border-radius:100%" src="http://img4.wikia.nocookie.net/__cb20130920142351/simpsons/images/e/e9/Pic_1187696292_8.jpg">'
     });
@@ -122,7 +137,7 @@ myApp.onPageInit('calendar', function (page) {
                   '</div>' +
               '</div>',
           onOpen: function (p) {
-              $$('.calendar-custom-toolbar .center').text(monthNames[p.currentMonth] +', ' + p.currentYear);
+              $$('.calendar-custom-toolbar .centere').text(monthNames[p.currentMonth] +', ' + p.currentYear);
               $$('.calendar-custom-toolbar .left .link').on('click', function () {
                   calendarInline.prevMonth();
               });
@@ -243,10 +258,10 @@ myApp.onPageInit('video', function (page) {
 });
 
 myApp.onPageInit('contact', function (page) {
-  var myLatlng = new google.maps.LatLng(48.852873, 2.343627);
+  var myLatlng = new google.maps.LatLng(5.566910, 95.367968);
   var map;
   var mapOptions = {
-    zoom: 11,
+    zoom: 14,
     center: myLatlng,
     disableDefaultUI: true
   };

@@ -1,7 +1,7 @@
 <?php
 // Configure your Subject Prefix and Recipient here
-$subjectPrefix = '[Contact via website]';
-$emailTo       = 'Your Email';
+$subjectPrefix = '[Kontak Harga Pasar]';
+$emailTo       = 'aulianza01@gmail.com';
 
 $errors = array(); // array to hold validation errors
 $data   = array(); // array to pass back data
@@ -14,19 +14,19 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
     if (empty($name)) {
-        $errors['name'] = 'Name is required.';
+        $errors['name'] = 'Nama wajib diisi.';
     }
 
     if (!preg_match('/^[^0-9][A-z0-9._%+-]+([.][A-z0-9_]+)*[@][A-z0-9_]+([.][A-z0-9_]+)*[.][A-z]{2,4}$/', $email)) {
-        $errors['email'] = 'Email is invalid.';
+        $errors['email'] = 'Email tidak valid.';
     }
 
     if (empty($subject)) {
-        $errors['subject'] = 'Subject is required.';
+        $errors['subject'] = 'Judul wajib diisi.';
     }
 
     if (empty($message)) {
-        $errors['message'] = 'Message is required.';
+        $errors['message'] = 'Pesan wajib diisi.';
     }
 
     // if there are any errors in our errors array, return a success boolean or false
@@ -51,7 +51,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         mail($emailTo, $subject, $body, $headers);
 
         $data['success'] = true;
-        $data['message'] = 'Congratulations. Your message has been sent successfully';
+        $data['message'] = 'Selamat, pesan Anda telah dikirim';
     }
 
     // return all our data to an AJAX call
