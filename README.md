@@ -2,7 +2,7 @@
 
 <p align="center">
 <a><b>Harga Pasar App</b></a><br>
-<a>versi 1.0 beta</a>
+<a>versi 1.0.1 beta</a>
 </p>
 
 ## Deskripsi
@@ -45,7 +45,7 @@ Link : https://apps.aulianza.com/hargapasar/admin/
 ### Frontend demo : Android (APK) & Web
 
 - APK Demo : [Download APK](https://bit.ly/harga-pasar)
-- Web Demo : https://apps.aulianza.com/hargapasar/
+- Web Demo : https://apps.aulianza.com/hargapasar/preview/
 
 
 ## Credit Library
