@@ -1,7 +1,7 @@
 <?php
 // Configure your Subject Prefix and Recipient here
 $subjectPrefix = '[Kontak Harga Pasar]';
-$emailTo       = 'aulianza01@gmail.com';
+$emailTo       = 'id.aulianza@gmail.com';
 
 $errors = array(); // array to hold validation errors
 $data   = array(); // array to pass back data
