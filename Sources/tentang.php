@@ -25,13 +25,48 @@
                             <div class="card-content">
                                 <div class="content-block-title"><br>
                                     <center>
-                                        <img src="icon/icon.png" width="30%"><br><br>
+                                        <img src="icon/icon_hp.png" width="30%"><br><br>
                                         <h2>Harga Pasar</h2>
                                     </center>
                                 </div>
                                 <div class="content-block">
-                                    <center><p><b>versi 1.0 beta</b></p></center>
+                                    <center>
+                                        <p><b>Versi 1.3</b></p>
+                                        <p><a href="#" class="button open-popup" data-popup=".popup-about">Changelog</a></p>
+                                    </center>
                                 </div>
+                                <!-- About Popup -->
+                                <div class="popup popup-about">
+                                    <div class="content-block">
+                                        <p><b>Changelog</b></p>
+                                        <p><a href="#" class="close-popup">Tutup</a></p>
+                                            <p><b>Versi 1.3</b><br>
+                                            - Perbaikan UI tampilan aplikasi<br>
+                                            - Penambahan menu changelog<br>
+                                            - Perbaikan bug
+                                            </p>
+                                            <p><b>Versi 1.2</b><br>
+                                            - Penambahan nomor registrasi pasar<br>
+                                            - Penambahan tanggal berdiri pasar<br>
+                                            - Penambahan jam buka pasar<br>
+                                            - Perubahan UI halaman pasar<br>
+                                            - Perubahan UI halaman produk<br>
+                                            - Penambahan form pencarian pasar<br>
+                                            - Penambahan form pencarian produk<br>
+                                            - Penambahan halaman rate<br>
+                                            - Perbaikan bug
+                                            </p>
+                                            <p><b>Versi 1.1</b><br>
+                                            - Perubahan UI tampilan aplikasi<br>
+                                            - Penambahan halaman kontak kami<br>
+                                            - Perbaikan bug
+                                            </p>
+                                            <p><b>Versi 1.0 beta</b><br>
+                                            - Versi beta dirilis
+                                            </p>
+                                    </div>
+                                </div>
+                              
                                 <div class="content-block">
                                     <p align="center">Aplikasi ini berguna untuk melihat informasi pasar serta harga barang di pasar terupdate.</p>
                                 </div>
