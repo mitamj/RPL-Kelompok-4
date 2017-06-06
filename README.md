@@ -1,8 +1,8 @@
-<p align="center"><img src="https://apps.aulianza.com/hargapasar/icon/icon.png" width="10%"></p>
+<p align="center"><img src="https://apps.aulianza.com/hargapasar/icon/icon_hp.png" width="10%"></p>
 
 <p align="center">
 <a><b>Harga Pasar App</b></a><br>
-<a>versi 1.0.1 beta</a>
+<a>versi 1.3</a>
 </p>
 
 ## Deskripsi
@@ -50,5 +50,6 @@ Link : https://apps.aulianza.com/hargapasar/admin/
 
 ## Credit Library
 
-- AdminLTE : https://adminlte.io/
+- Framework7 : https://framework7.io
+- AdminLTE : https://adminlte.io
 - Mobile Templates : http://mickaelguillaume.esy.es/Mobile-Template
