@@ -14,6 +14,8 @@
 	$jmlpro = mysql_num_rows($produk);
 	$produk=mysql_query("SELECT * FROM tb_kategori");
 	$jmlkat = mysql_num_rows($produk);
+	$his=mysql_query("SELECT * FROM tb_logharga");
+	$jmlhis = mysql_num_rows($his);
 ?>
 <section class="content">
     <div class="row">
@@ -109,6 +111,19 @@
 					<i class="ion ion-navicon-round"></i>
 				</div>
 				<p class="small-box-footer"><a href="home-admin.php?page=form-view-data-kategori"><font color="FFFFFF">Lihat Data Kategori <i class="fa fa-arrow-circle-right"></i></font></a></p>
+			</div>
+        </div>
+		
+		<div class="col-lg-6 col-xs-6">
+			<div class="small-box bg-purple">
+				<div class="inner">
+					<h4><?=$jmlhis?></h4>
+					<p>Total History</p>
+				</div>
+				<div class="icon">
+					<i class="ion ion-connection-bars"></i>
+				</div>
+				<p class="small-box-footer"><a href="home-admin.php?page=form-view-data-history"><font color="FFFFFF">Lihat History Produk <i class="fa fa-arrow-circle-right"></i></font></a></p>
 			</div>
         </div>
     </div>

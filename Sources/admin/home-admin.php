@@ -126,6 +126,8 @@ if($_SESSION['hak_akses']!="Admin"){
 				<li class="header">DATA KATEGORI</li>
 				<li class="treeview"><a href="home-admin.php?page=form-view-data-kategori"><i class="fa fa-bars"></i> <span>Lihat Data Kategori</span></i></a></li>
 				<li class="treeview"><a href="home-admin.php?page=form-master-data-kategori"><i class="fa fa-plus"></i> <span>Tambah Data Kategori</span></i></a></li>
+				<li class="header">HISTORY</li>
+				<li class="treeview"><a href="home-admin.php?page=form-view-data-history"><i class="fa fa-signal"></i> <span>Lihat Data History</span></i></a></li>
 			</ul>
 		</section>
 	</aside>
@@ -170,6 +172,15 @@ if($_SESSION['hak_akses']!="Admin"){
 					case 'view-detail-data-kategori': include "pages/kategori/view-detail-data-kategori.php"; break;
 					case 'ganti-foto-kategori': include "pages/kategori/ganti-foto-kategori.php"; break;
 					
+					case 'form-view-data-history': include "pages/history/form-view-data-history.php"; break;
+					case 'form-master-data-history': include "pages/history/form-master-data-history.php"; break;
+					case 'master-data-history': include "pages/history/master-data-history.php"; break;
+					case 'form-edit-data-history': include "pages/history/form-edit-data-history.php"; break;
+					case 'edit-data-history': include "pages/history/edit-data-history.php"; break;
+					case 'delete-data-history': include "pages/history/delete-data-history.php"; break;
+					case 'view-detail-data-history': include "pages/history/view-detail-data-history.php"; break;
+					case 'ganti-foto-history': include "pages/history/ganti-foto-history.php"; break;
+					
 					case 'master-data-kelaspasar': include "pages/master/master-data-kelaspasar.php"; break;
 					case 'form-edit-data-kelaspasar': include "pages/master/form-edit-data-kelaspasar.php"; break;
 					case 'edit-data-kelaspasar': include "pages/master/edit-data-kelaspasar.php"; break;
@@ -188,7 +199,7 @@ if($_SESSION['hak_akses']!="Admin"){
 		</section>
 	</div>
 	<footer class="main-footer">
-		<div class="pull-right hidden-xs">Made with ❤ in Banda Aceh<b> — </b> v 1.0</div>
+		<div class="pull-right hidden-xs"><b>Version</b> 1.0</div>
 		Copyright &copy; 2017 <a href="<?php echo $set['url_app']?>" target="_blank"><?php echo $set['anchor_app']?></a>. All rights reserved
 	</footer>
 </div>

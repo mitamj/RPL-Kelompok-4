@@ -33,6 +33,7 @@
             <li><a href="pasar.php"><i class="fa fa-hospital-o"></i>Info Pasar</a></li>
             <li><a href="produk.php"><i class="fa fa-shopping-cart"></i>Daftar Produk</a></li>
             <li><a href="kategori.php"><i class="fa fa-file-text-o"></i>Kategori Produk</a></li>
+            <li><a href="history.php"><i class="fa fa-signal"></i>History Produk</a></li>
             <li><a href="rate.php"><i class="fa fa-star"></i>Rate Aplikasi</a></li>
             <li><a href="tentang.php"><i class="fa fa-info-circle"></i>Tentang Aplikasi</a></li>
             <li><a href="kontak.php"><i class="fa fa-envelope"></i>Kontak Kami</a></li>
@@ -58,25 +59,26 @@
                     <!-- Title of the page-->
                 </div>
             </div>
+                  
             <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
             <div class="pages navbar-through">
                 <!-- Page, data-page contains page name-->
                 <div data-page="index" class="page">
                     
+                    <!-- Toolbar has additional "toolbar-bottom" class -->
+                    <div class="toolbar toolbar-bottom">
+                        <div class="toolbar-inner">
+                            <a class="link"></a>
+                            <font color="#ffffff"><span id="clock"></span></font>
+                            <a class="link"></a>
+                        </div>
+                    </div>
+
                     <!-- Scrollable page content-->
                     <div class="page-content">
                         <div class="cycle-slideshow">
-                            <img src="img/slider/slider1.jpg" alt="Selamat datang di aplikasi Harga Pasar">
-                        </div>
-                        <br>
-                            <center>
-                                <marquee scrollamount="3" bgcolor="#fb4848" width="90%">
-                                      <font color="white">
-                                        Selamat datang di Aplikasi Harga Pasar |  
-                                         <span id="clock"></span>
-                                      </font>
-                                </marquee>
-                            </center>
+                            <img src="img/slider/home_banner.png" alt="Selamat datang di aplikasi Harga Pasar">
+                        </div><br>
                             
                             <script type='text/javascript'>
                                 <!--
@@ -112,71 +114,71 @@
                             setInterval(showTime, 500);
                             //-->
                             </script>
-                        <br>
-                            
-                        <div class="content-block">
-                            <div class="row home">
-                                <div class="col-33">
-                                    <a href="pasar.php" class="link">
-                                        <img class="icon" alt="icon" src="icon/pasar.png" />
-                                        <span>Pasar</span>
-                                    </a>
-                                </div>
 
-                                <div class="col-33">
-                                    <a href="produk.php" class="link">
-                                        <img class="icon" alt="icon" src="icon/produk.png" />
-                                        <span>Produk</span>
-                                    </a>
-                                </div>
-                                <div class="col-33">
-                                    <a href="kategori.php" class="link">
-                                        <img class="icon" alt="icon" src="icon/kategori.png" />
-                                        <span>Kategori</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row home">
-                                <div class="col-33">
-                                    <a href="rate.php" class="link">
-                                        <img class="icon" alt="icon" src="icon/rate.png" />
-                                        <span>Rate</span>
-                                    </a>
-                                </div>
-                                <div class="col-33">
-                                    <a href="tentang.php" class="link">
-                                        <img class="icon" alt="icon" src="icon/tentang.png" />
-                                        <span>Tentang</span>
-                                    </a>
-                                </div>
-                                <div class="col-33">
-                                    <a href="kontak.php" class="link">
-                                        <img class="icon" alt="icon" src="icon/kontak.png" />
-                                        <span>Kontak</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <!--<div class="row home">
-                                <div class="col-33">
-                                    <a href="typo.html" class="link">
-                                        <img class="icon" alt="icon" src="icon/typo.png" />
-                                        <span>Typography</span>
-                                    </a>
-                                </div>
-                                <div class="col-33">
-                                    <a href="buttons.html" class="link">
-                                        <img class="icon" alt="icon" src="icon/button.png" />
-                                        <span>Buttons</span>
-                                    </a>
-                                </div>
-                                <div class="col-33">
-                                    <a href="colors.html" class="link">
-                                        <img class="icon" alt="icon" src="icon/color.png" />
-                                        <span>Colors</span>
-                                    </a>
-                                </div>-->
-                            </div>
-                        </div>
+                                        <div class="content-block">
+                                            <div class="row home">
+                                                <div class="col-33">
+                                                    <a href="pasar.php" class="link">
+                                                        <img class="icon" alt="icon" src="icon/pasar.png" />
+                                                        <span>Pasar</span>
+                                                    </a>
+                                                </div>
+                
+                                                <div class="col-33">
+                                                    <a href="produk.php" class="link">
+                                                        <img class="icon" alt="icon" src="icon/produk.png" />
+                                                        <span>Produk</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-33">
+                                                    <a href="kategori.php" class="link">
+                                                        <img class="icon" alt="icon" src="icon/kategori.png" />
+                                                        <span>Kategori</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="row home">
+                                                <div class="col-33">
+                                                    <a href="rate.php" class="link">
+                                                        <img class="icon" alt="icon" src="icon/rate.png" />
+                                                        <span>Rate</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-33">
+                                                    <a href="tentang.php" class="link">
+                                                        <img class="icon" alt="icon" src="icon/tentang.png" />
+                                                        <span>Tentang</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-33">
+                                                    <a href="kontak.php" class="link">
+                                                        <img class="icon" alt="icon" src="icon/kontak.png" />
+                                                        <span>Kontak</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--<div class="row home">
+                                                <div class="col-33">
+                                                    <a href="typo.html" class="link">
+                                                        <img class="icon" alt="icon" src="icon/typo.png" />
+                                                        <span>Typography</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-33">
+                                                    <a href="buttons.html" class="link">
+                                                        <img class="icon" alt="icon" src="icon/button.png" />
+                                                        <span>Buttons</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-33">
+                                                    <a href="colors.html" class="link">
+                                                        <img class="icon" alt="icon" src="icon/color.png" />
+                                                        <span>Colors</span>
+                                                    </a>
+                                                </div>-->
+                                            </div>
+                                        </div>
+
                     </div>
                 </div>
             </div>

@@ -16,6 +16,11 @@
                     <div class="center">
                         <h2 class="title">DAFTAR HARGA SUSU</h2>
                     </div>
+					<div class="right">
+                        <a href="kategori.php" class="link icon-only">
+                            <i class="fa fa-arrow-circle-left"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="pages navbar-through">
@@ -31,12 +36,24 @@
                         <div class="card demo-card-header-pic">
                            <div class="card-content">
                                 <div class="card-content-inner">
-								
-                                    <p class="color-gray">Kategori <?php echo $pas['kategori'];?></p>
-                                    <p><i class="fa fa-archive" aria-hidden="true"></i>Nama : <?php echo($pas['nama']);?></p>
-									<p><i class="fa fa-tags" aria-hidden="true"></i>Harga : <?php echo($pas['harga']);?></p>
-									<p><i class="fa fa-calendar" aria-hidden="true"></i>Tanggal Harga : <?php echo($pas['tgl_harga']);?></p>
-
+								 <p><b><?php echo($pas['nama']);?></b></p>
+								    <table style="width:100%">
+                                      <tr>
+                                        <td><i class="fa fa-tag" aria-hidden="true"></i></td>
+                                        <td>Harga</td>
+                                        <td>: <?php echo $pas['harga'];?></td> 
+                                      </tr>
+                                      <tr>
+                                        <td><i class="fa fa-calendar" aria-hidden="true"></i></td>
+                                        <td>Diperbarui</td>
+                                        <td>: <?php echo($pas['tgl_harga']);?></td> 
+                                      </tr>
+                                      <tr>
+                                        <td><i class="fa fa-file-text-o" aria-hidden="true"></i></td>
+                                        <td>Kategori</td>
+                                        <td>: <?php echo $pas['kategori'];?></td> 
+                                      </tr>
+                                    </table>
                                 </div>
                             </div>
                            

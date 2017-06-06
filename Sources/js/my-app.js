@@ -69,8 +69,8 @@ myApp.onPageInit('google-map', function (page) {
 myApp.onPageInit('notifications', function (page) {
     $$('.notification-default').on('click', function () {
     myApp.addNotification({
-        title: 'Copernic',
-        message: 'This is a simple notification message with title and message'
+        title: 'Harga Pasar',
+        message: 'Fitur ini sedang dikembangkan'
     });
 });
 $$('.notification-full').on('click', function () {
