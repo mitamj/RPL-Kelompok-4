@@ -1,13 +1,13 @@
 <p align="center"><img src="https://apps.aulianza.com/hargapasar/icon/icon_hp.png" width="10%"></p>
 
 <p align="center">
-<a><b>Harga Pasar App</b></a><br>
+<a><b>Harga Pasar</b></a><br>
 <a>versi 1.3</a>
 </p>
 
 ## Deskripsi
 
-Harga Pasar merupakan sebuah aplikasi web dan android yang berfungsi untuk melihat informasi pasar serta harga produk di pasar secara realtime dan terupdate. Aplikasi ini dibangun dengan menggunakan HTML5/CSS3, PHP 5.6 & MySQL.
+Harga Pasar merupakan sebuah aplikasi web dan android yang berfungsi untuk melihat informasi pasar serta harga produk di pasar secara realtime dan terupdate. Aplikasi ini dibangun dengan menggunakan Framework7, HTML5/CSS3, PHP 5.6 & MySQL.
 
 ## Fitur 
 
@@ -32,6 +32,7 @@ Berikut beberapa fitur frontend aplikasi :
 - Halaman kategori produk
 - Halaman tentang aplikasi
 - Halaman kontak kami
+- Halaman rate aplikasi
 
 ## Demo 
 
@@ -44,7 +45,7 @@ Link : https://apps.aulianza.com/hargapasar/admin/
 
 ### Frontend demo : Android (APK) & Web
 
-- APK Demo : [Download APK](https://bit.ly/harga-pasar)
+- APK Demo : [Download APK](https://apps.aulianza.com/hargapasar/dl/hargapasar.apk)
 - Web Demo : https://apps.aulianza.com/hargapasar/preview/
 
 
