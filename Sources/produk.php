@@ -25,7 +25,24 @@
             </div>
             <div class="pages navbar-through">
                 <div data-page="blog" class="page">
-                    <div class="page-content">
+                    
+                    <form data-search-list = ".list-block-search" data-search-in = ".card-content-inner" 
+                     class = "searchbar searchbar-init">
+                     <div class = "searchbar-input">
+                        <input type = "search" placeholder = "Cari Produk"><a href = "#" 
+                           class = "searchbar-clear"></a>
+                     </div>
+                     <a href = "#" class = "searchbar-cancel"><font color="white">Batal</font></a>
+                  </form>
+                  
+                   <div class = "searchbar-overlay"></div>
+                  
+                    <div class="page-content pull-to-refresh-content">
+                        
+                        <div class="pull-to-refresh-layer">
+                          <div class="preloader"></div>
+                          <div class="pull-to-refresh-arrow"></div>
+                        </div>
 
                         <?php
                             $no=0;
@@ -33,17 +50,33 @@
                             $no++
                         ?>  
 
+                        <div class ="list-block list-block-search searchbar-found">
+    
                         <div class="card demo-card-header-pic">
                            <div class="card-content">
                                 <div class="card-content-inner">
-								
-                                    <p class="color-gray">Kategori <?php echo $pas['kategori'];?></p>
-                                    <p><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>Nama : <?php echo($pas['nama']);?></p>
-									<p><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>Harga : <?php echo($pas['harga']);?></p>
-									<p><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>Tanggal Harga : <?php echo($pas['tgl_harga']);?></p>
+								    <p><b><?php echo($pas['nama']);?></b></p>
+								    <table style="width:100%">
+                                      <tr>
+                                        <td><i class="fa fa-tag" aria-hidden="true"></i></td>
+                                        <td>Harga</td>
+                                        <td>: <?php echo $pas['harga'];?></td> 
+                                      </tr>
+                                      <tr>
+                                        <td><i class="fa fa-calendar" aria-hidden="true"></i></td>
+                                        <td>Diperbarui</td>
+                                        <td>: <?php echo($pas['tgl_harga']);?></td> 
+                                      </tr>
+                                      <tr>
+                                        <td><i class="fa fa-file-text-o" aria-hidden="true"></i></td>
+                                        <td>Kategori</td>
+                                        <td>: <?php echo $pas['kategori'];?></td> 
+                                      </tr>
+                                    </table>
                                 </div>
                             </div>
                            
+                        </div>
                         </div>
 
                         <?php

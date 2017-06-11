@@ -8,7 +8,7 @@ Created:	    26.06.2015
 Last updated:	26.06.2015
 Template:	    Copernic - HTML Mobile and Tablet Template
 
-[Table of Contents]
+[Table of Contents].navbar
 
 0. GENERAL
 1. HEADER
@@ -49,6 +49,10 @@ Template:	    Copernic - HTML Mobile and Tablet Template
   text-align: center;
 }
 
+.statusbar-overlay {
+    background: #fb4848;
+}
+
 body {
   font-family: 'Imprima', sans-serif;
   font-weight: 400;
@@ -87,7 +91,7 @@ h2 {
 }
 
 .fa {
-  margin-right: 20px;
+  margin-right: 0px;
 }
 
 .content-block-inner:after {
@@ -158,10 +162,10 @@ li.accordion-item {
 /* ---------->>> HEADER <<<-----------*/
 /* -----------------------------------*/
 .navbar {
-  background: #fff;
+  background: #fb4848;
   width: 100%;
   height: 45px;
-  box-shadow: 0 1px 4px #e3e3e3;
+  box-shadow: 0 0px 0px #e3e3e3;
   font-family: 'Imprima', sans-serif;
 }
 
@@ -173,14 +177,14 @@ li.accordion-item {
 /* line 196, ../sass/template.scss */
 h2.title {
   font-weight: 500;
-  color: #fb4848;
+  color: #ffffff;
 }
 
 /* -----------------------------------*/
 /* ---------->>> HOME <<<-----------*/
 /* -----------------------------------*/
 .navbar-through .page-content {
-  background: white;
+  background: #ebeff2;
 }
 
 img.icon {
@@ -219,9 +223,9 @@ img.icon {
 
 #menu ul li a {
   color: inherit;
-  font-size: 15px;
+  font-size: 16px;
   display: block;
-  padding: 8px 0 8px 7px;
+  padding: 10px 0 10px 15px;
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -512,7 +516,7 @@ label.label-radio input[type=radio]:checked ~ .item-inner {
 /* ---------->>> GRID <<<-----------*/
 /* -----------------------------------*/
 div[class*="col-"] {
-  background: white;
+  background: #ebeff2;
   text-align: center;
   color: #fb4848;
   padding: 5px;
